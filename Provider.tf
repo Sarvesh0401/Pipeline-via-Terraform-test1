@@ -6,6 +6,12 @@ terraform {
 
     }
   }
+  backend "azurerm" {
+    storage_account_name = "samrg1"
+    container_name = "samcontainer260386"
+    key = "tfvars"
+    
+  }
 }
 provider "azurerm" {
   features {
